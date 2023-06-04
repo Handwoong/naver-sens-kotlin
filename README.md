@@ -18,7 +18,7 @@ allprojects {
 
 ```groovy
 dependencies {
-    implementation 'com.github.Handwoong:naver-sens-kotlin:1.0.0'
+    implementation 'com.github.Handwoong:naver-sens-kotlin:v1.0.0'
 }
 ```
 
