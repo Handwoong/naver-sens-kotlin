@@ -1,0 +1,38 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.8.21'
+    id 'application'
+    id 'maven-publish'
+}
+
+group = 'com.handwoong'
+version = '1.0'
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.java
+
+            version = version
+            artifactId = project.name
+            groupId = rootProject.group
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+    implementation "com.fasterxml.jackson.module:jackson-module-kotlin:2.15.2"
+    testImplementation 'org.jetbrains.kotlin:kotlin-test'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+kotlin {
+    jvmToolchain(11)
+}
