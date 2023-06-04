@@ -1,8 +1,8 @@
 package template.alimtalk
 
 data class FailOverConfig(
-    val type: String?,
-    val from: String?,
-    val subject: String?,
-    val content: String?,
+    val type: String? = null,
+    val from: String? = null,
+    val subject: String? = null,
+    val content: String? = null,
 )

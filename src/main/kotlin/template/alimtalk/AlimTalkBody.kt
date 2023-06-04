@@ -7,9 +7,9 @@ data class AlimTalkBody(
     val plusFriendId: String,
     val templateCode: String,
     val messages: MutableList<Message> = mutableListOf(),
-    val reserveTime: String?,
-    val reserveTimeZone: String?,
-    val scheduleCode: String?,
+    val reserveTime: String? = null,
+    val reserveTimeZone: String? = null,
+    val scheduleCode: String? = null,
 ) : MessageBody {
 
     init {

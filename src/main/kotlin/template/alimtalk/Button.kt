@@ -6,10 +6,10 @@ import template.alimtalk.ButtonType.*
 data class Button(
     val type: ButtonType,
     var name: String,
-    val linkMobile: String?,
-    val linkPc: String?,
-    val schemeIos: String?,
-    val schemeAndroid: String?,
+    val linkMobile: String? = null,
+    val linkPc: String? = null,
+    val schemeIos: String? = null,
+    val schemeAndroid: String? = null,
 ) {
 
     init {
