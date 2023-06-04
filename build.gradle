@@ -1,5 +1,7 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.8.21'
+    id 'org.jetbrains.kotlin.jvm' version '1.6.21'
     id 'application'
     id 'maven-publish'
 }
@@ -33,6 +35,9 @@ test {
     useJUnitPlatform()
 }
 
-kotlin {
-    jvmToolchain(11)
+tasks.withType(KotlinCompile).configureEach {
+    kotlinOptions {
+        freeCompilerArgs = ['-Xjsr305=strict']
+        jvmTarget = '11'
+    }
 }
