@@ -18,7 +18,7 @@ allprojects {
 
 ```groovy
 dependencies {
-    implementation 'com.github.Handwoong:naver-sens-kotlin:v1.0.0'
+    implementation 'com.github.Handwoong:naver-sens-kotlin:v1.0.3'
 }
 ```
 
@@ -56,6 +56,6 @@ messageSender.alimTalkTemplateCheck(
 ) // 알림톡 템플릿 조회
 ```
 
-자세한 내용은 [네이버 SENS API](https://api.ncloud-docs.com/docs/ai-application-service-sens-alimtalkv2) 문서를 참고 부탁드립니다.
+현재 [네이버 SENS API](https://api.ncloud-docs.com/docs/ai-application-service-sens-alimtalkv2)의 알림톡 API 사용 가능합니다.
 
 
