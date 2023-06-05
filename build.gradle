@@ -31,6 +31,14 @@ dependencies {
     testImplementation 'org.jetbrains.kotlin:kotlin-test'
 }
 
+subprojects {
+    configurations.all {
+        resolutionStrategy {
+            force "com.squareup.okhttp3:okhttp:4.10.0"
+        }
+    }
+}
+
 test {
     useJUnitPlatform()
 }
