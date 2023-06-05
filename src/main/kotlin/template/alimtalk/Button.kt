@@ -1,7 +1,8 @@
 package template.alimtalk
 
+import enums.ButtonType
+import enums.ButtonType.*
 import exception.SensException
-import template.alimtalk.ButtonType.*
 
 data class Button(
     val type: ButtonType,

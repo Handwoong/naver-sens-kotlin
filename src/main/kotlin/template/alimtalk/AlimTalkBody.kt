@@ -6,7 +6,7 @@ import template.MessageBody
 data class AlimTalkBody(
     val plusFriendId: String,
     val templateCode: String,
-    val messages: MutableList<Message> = mutableListOf(),
+    val messages: MutableList<Message>,
     val reserveTime: String? = null,
     val reserveTimeZone: String? = null,
     val scheduleCode: String? = null,
